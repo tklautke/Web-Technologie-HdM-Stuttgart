@@ -1,0 +1,80 @@
+body{
+    max-width: 1300px;
+    margin: auto;
+    font-family: Arial, Helvetica, Sans-Serif;
+    text-align: center;
+}
+
+.webtitel{
+    font-family: Impact, Charcoal, Sans-Serif;
+    background-color: #ffa600;
+}
+
+.navigator{
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.navigator:hover{
+    background-color: #000;
+}
+
+.headline{
+    font-family: Courier New, Courier, Monospace;
+}
+
+table{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+tr, td{
+    border-bottom: 1px solid #000;
+}
+
+th{
+    background-color: #ffa600;
+    color: #fff;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#bildtext{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bambi:hover, 
+#inception:hover, 
+#greenmile:hover{
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
+
+}
+
+form{
+    width: 25%;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #3a3a3a;
+}
+
+button{
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
