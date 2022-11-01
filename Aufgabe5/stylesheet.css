@@ -1,0 +1,112 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.webtitel{
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.headline{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: #ff8800;
+}
+
+.navigator{
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.navigator:hover{
+    background-color: #050505; 
+}
+
+table {
+  width: 50%;
+  text-align: center;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #000000;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2}
+
+th {
+  background-color: #ffa600;
+  color: white;
+}
+
+#bildtext{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bambi:hover,#inception:hover,#greenmile:hover {
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
+}
+
+form{
+    width: 25%;
+    color: white;
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 10px;
+    background-color: #3a3a3a;
+}
+
+button{
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bild{
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+}
+
+.bild:hover{
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: bisque;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigator{
+        flex-grow: 1;
+    }
+
+    .eingabe{
+        width: 50%;
+    }
+}
+
+
+
