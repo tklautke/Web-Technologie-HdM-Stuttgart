@@ -19,7 +19,6 @@ class Reservations {
   }
 
   printReservations(){
-
     this.mySeatList.forEach(i => {
       console.log(i)
     })
