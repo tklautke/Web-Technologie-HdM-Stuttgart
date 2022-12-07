@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Filme&Mehr</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheet.css"
+      media="(max-width: 800px)"
+    />
+    <script src="reservation.js" async></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="webtitel">Reservierung</h1>
+    </header>
+    <nav>
+      <a href="start.html" class="navigator">Überblick</a> |
+      <a href="" class="navigator" style="pointer-events: none">Reservation</a>
+      | <a href="" class="navigator">Klassiker</a> |
+      <a href="https://www.netflix.com/de/" class="navigator">Netflix</a>
+    </nav>
+
+    <h2>Verfügbare Plätze:</h2>
+    <p>Klicken Sie die Plätze an die Sie reservieren möchten</p>
+    <div id="currentSeats"></div>
+    <br />
+    <h2>Reservierte Sitze:</h2>
+    <p id="seats"></p>
+    <button id="button">Löschen</button>
+  </body>
+</html>
