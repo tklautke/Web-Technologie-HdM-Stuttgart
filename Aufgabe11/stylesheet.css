@@ -1,0 +1,172 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.webtitel {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.headline {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: #ff8800;
+}
+
+.navigator {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.navigator:hover {
+    background-color: #050505; 
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #000000;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2}
+
+th {
+    background-color: #ffa600;
+    color: white;
+}
+
+#bildtext {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bambi:hover,
+#inception:hover,
+#greenmile:hover {
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
+}
+
+#newsletter {
+    width: 25%;
+    color: white;
+    margin-left:auto; 
+    margin-right:auto;
+    padding: 10px;
+    background-color: #3a3a3a;
+}
+
+button {
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bild {
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+}
+
+.bild:hover {
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #7aa8b7;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+.imageContainer {
+    position: relative;
+}
+  
+.imageContainer:hover .bild {
+    opacity: 0.3;
+}
+  
+.imageContainer:hover .imgHover {
+    opacity: 1;
+}
+  
+.bild {
+    opacity: 1;
+    display: block;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.imgHover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  
+.buchen {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: bisque;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigator {
+        flex-grow: 1;
+    }
+
+    .eingabe {
+        width: 50%;
+    }
+}
+
+
+

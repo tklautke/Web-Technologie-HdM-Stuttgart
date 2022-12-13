@@ -14,14 +14,14 @@ const URL = "https://my-json-server.typicode.com/christophkunz/webtechbackend/se
 //Sitze Laden
 
 let xmlHttp = new XMLHttpRequest();
-xmlHttp.onreadystatechange = function() {
-  if (xmlHttp.readyState === 4 && xmlHttp.status === 200){
-    let responseJSON = JSON.parse(xmlHttp.responseText)
-    responseJSON.forEach(seatObj => {
-      availableSeats.push(seatObj.seat)
-    })
-    showTable()
-  }
+xmlHttp.onreadystatechange = function () {
+    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+        let responseJSON = JSON.parse(xmlHttp.responseText)
+        responseJSON.forEach(seatObj => {
+            availableSeats.push(seatObj.seat)
+        })
+        showTable()
+    }
 }
 xmlHttp.open("GET", URL, true);
 xmlHttp.send();
