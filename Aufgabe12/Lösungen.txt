@@ -1,0 +1,9 @@
+Aufgabe 1:
+
+Node = Node.js ist eine Laufzeitumgebung für Javascript.
+
+npm = Der "Node Package Manager" ist ein Paket Manager für Node.js Module -> Einfaches verwenden von Pakte von dritten
+
+npx = Es ist ein npm-Paket-Runner, der jedes gewünschte Paket aus von npm ausführen kann, ohne dieses Paket zu installieren.
+
+React = React ist eine JavaScript-library zur Erstellung von webbasierten Benutzeroberflächen.
