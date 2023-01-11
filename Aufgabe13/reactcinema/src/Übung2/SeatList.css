@@ -1,0 +1,14 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-styling{
+    width: 400px;
+    height: 500px;
+}
+
+.cardMedia-styling{
+    height: 300px;
+}
