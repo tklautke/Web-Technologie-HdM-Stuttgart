@@ -2,44 +2,44 @@
 <html>
 
 <head>
-  <meta charset='UTF-8'>
-  <title>Filme&Mehr</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="(max-width: 800px)">
-  <script src="reservation.js" async></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <title>Filme&Mehr</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="stylesheet.css" media="(max-width: 800px)" rel="stylesheet" type="text/css">
+    <script async src="reservation.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 
 <body>
-  <header>
+<header>
     <h1 class="webtitel">Reservierung</h1>
-  </header>
-  <nav>
-    <a href="start.html" class="navigator">Überblick</a> |
-    <a href="" class="navigator" style="pointer-events: none;">Reservation</a> |
-    <a href="" class="navigator">Klassiker</a> |
-    <a href="https://www.netflix.com/de/" class="navigator">Netflix</a>
-  </nav>
+</header>
+<nav>
+    <a class="navigator" href="start.html">Überblick</a> |
+    <a class="navigator" href="" style="pointer-events: none;">Reservation</a> |
+    <a class="navigator" href="">Klassiker</a> |
+    <a class="navigator" href="https://www.netflix.com/de/">Netflix</a>
+</nav>
 
-  <h2>Verfügbare Plätze:</h2>
-  <div id="currentSeats">
+<h2>Verfügbare Plätze:</h2>
+<div id="currentSeats">
     <table id="available-seats-table">
     </table>
-  </div>
-  <br>
-  <h2>Platz buchen</h2>
-  <form>
+</div>
+<br>
+<h2>Platz buchen</h2>
+<form>
     <label>Sitzwahl:</label>
     <div id="options">
-      <form action="#">
-        <label for="seats-dropdown">Choose a seat:</label>
-        <select name="seats" id="seats-dropdown">
-        </select>
-        <br><br>
-        <input type="submit" value="Submit">
-      </form>
+        <form action="#">
+            <label for="seats-dropdown">Choose a seat:</label>
+            <select id="seats-dropdown" name="seats">
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
-  </form>
+</form>
 
 </body>
 

@@ -23,14 +23,14 @@ header {
 }
 
 .navigator:hover {
-    background-color: #050505; 
+    background-color: #050505;
 }
 
 table {
     width: 50%;
     text-align: center;
-    margin-left:auto; 
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td {
@@ -39,7 +39,8 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2}
+    background-color: #f2f2f2
+}
 
 th {
     background-color: #ffa600;
@@ -62,8 +63,8 @@ th {
 #newsletter {
     width: 25%;
     color: white;
-    margin-left:auto; 
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     background-color: #3a3a3a;
 }
@@ -104,20 +105,18 @@ button {
 }
 
 
-
-
 .imageContainer {
     position: relative;
 }
-  
+
 .imageContainer:hover .bild {
     opacity: 0.3;
 }
-  
+
 .imageContainer:hover .imgHover {
     opacity: 1;
 }
-  
+
 .bild {
     opacity: 1;
     display: block;
@@ -127,7 +126,7 @@ button {
     transition: .5s ease;
     backface-visibility: hidden;
 }
-  
+
 .imgHover {
     transition: .5s ease;
     opacity: 0;
@@ -138,18 +137,17 @@ button {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
-  
+
 .text {
     background-color: #04AA6D;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
 }
-  
+
 .buchen {
     text-decoration: none;
 }
-
 
 
 @media screen and (max-width: 800px) {
@@ -161,6 +159,7 @@ button {
         display: flex;
         justify-content: space-between;
     }
+
     .navigator {
         flex-grow: 1;
     }

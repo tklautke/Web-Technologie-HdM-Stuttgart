@@ -1,112 +1,112 @@
 body {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .webtitel {
-  font-family: Impact, Charcoal, sans-serif;
+    font-family: Impact, Charcoal, sans-serif;
 }
 
 .headline {
-  font-family: "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 header {
-  background-color: #ff8800;
+    background-color: #ff8800;
 }
 
 .navigator {
-  background-color: #f44336;
-  color: white;
-  text-decoration: none;
-  padding: 4px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
 }
 
 .navigator:hover {
-  background-color: #050505;
+    background-color: #050505;
 }
 
 table {
-  width: 50%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td {
-  padding: 8px;
-  border-bottom: 1px solid #000000;
+    padding: 8px;
+    border-bottom: 1px solid #000000;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 th {
-  background-color: #ffa600;
-  color: white;
+    background-color: #ffa600;
+    color: white;
 }
 
 #bildtext {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #bambi:hover,
 #inception:hover,
 #greenmile:hover {
-  width: 270px;
-  height: 420px;
-  opacity: 0.5;
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
 }
 
 form {
-  width: 25%;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  background-color: #3a3a3a;
+    width: 25%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #3a3a3a;
 }
 
 button {
-  font-family: monospace;
-  font-weight: bold;
-  border-radius: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .bild {
-  width: 250px;
-  height: 400px;
-  margin: 10px;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
 }
 
 .bild:hover {
-  width: 270px;
-  height: 420px;
-  opacity: 0.5;
+    width: 270px;
+    height: 420px;
+    opacity: 0.5;
 }
 
 /* Media Query */
 @media screen and (max-width: 800px) {
-  /* A2 - Die Body-Hintergrundfarbe soll sich zu "bisque" ändern */
-  body {
-    background-color: bisque;
-  }
+    /* A2 - Die Body-Hintergrundfarbe soll sich zu "bisque" ändern */
+    body {
+        background-color: bisque;
+    }
 
-  /* A2 - Die Inhalte des Navigationselementes sollen flexibel sein und  den gleichen Abstand zueinander haben */
-  nav {
-    display: flex;
-    justify-content: space-between;
-  }
+    /* A2 - Die Inhalte des Navigationselementes sollen flexibel sein und  den gleichen Abstand zueinander haben */
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
-  /* A3 - Die Elemente der Klasse "navigator" sollen um den gleichen Wertwachsen,wenn die Bildschirm Größe erhöht wird */
-  .navigator {
-    flex-grow: 1;
-  }
+    /* A3 - Die Elemente der Klasse "navigator" sollen um den gleichen Wertwachsen,wenn die Bildschirm Größe erhöht wird */
+    .navigator {
+        flex-grow: 1;
+    }
 
-  /* A4 - Fügen Sie den Inputs die Klasse „eingabe“ hinzu. Wenn die Bildschirmgröße unter 800px fällt, soll die Breite der Inputfeldes 50% betragen.*/
-  .eingabe {
-    width: 50%;
-  }
+    /* A4 - Fügen Sie den Inputs die Klasse „eingabe“ hinzu. Wenn die Bildschirmgröße unter 800px fällt, soll die Breite der Inputfeldes 50% betragen.*/
+    .eingabe {
+        width: 50%;
+    }
 } 

@@ -5,39 +5,38 @@ const regex = /[a-zA-Z0-9]{6,}/;
 const mailpattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
 
-
-// Funktion zur Rückgabe der Sitzplatzreservierungen 
+// Funktion zur Rückgabe der Sitzplatzreservierungen
 function seatReservation(aSeat) {
-  let seat = aSeat;
+    let seat = aSeat;
 
-  return function () {
-    return aSeat;
-  };
+    return function () {
+        return aSeat;
+    };
 }
 
 
 // Klasse zur Buchung einer Sitzplatzreservierung
 class Reservations {
 
-  #myMailAdress = null;
-  #mySeatList = [];
+    #myMailAdress = null;
+    #mySeatList = [];
 
-  //mail der Reservierenden Person wird an Klasse übergeben
-  constructor(aMailAdress) {
-    this.#myMailAdress = aMailAdress;
-  }
+    //mail der Reservierenden Person wird an Klasse übergeben
+    constructor(aMailAdress) {
+        this.#myMailAdress = aMailAdress;
+    }
 
-  //Reservierung wird zu platz-Array hinzugefügt
-  addSeatReservation(aSeat) {
-    this.#mySeatList.push(aSeat);
-  }
+    //Reservierung wird zu platz-Array hinzugefügt
+    addSeatReservation(aSeat) {
+        this.#mySeatList.push(aSeat);
+    }
 
-  //Reservierungen werden angezeigt
-  printReservations() {
-    this.#mySeatList.forEach(seat => {
-      console.log(seat());
-    });
-  }
+    //Reservierungen werden angezeigt
+    printReservations() {
+        this.#mySeatList.forEach(seat => {
+            console.log(seat());
+        });
+    }
 }
 
 
@@ -48,29 +47,25 @@ list.addSeatReservation(new seatReservation('F6'));
 list.printReservations();
 
 
-
 //Try Catch mit Error handling
 function showMe() {
-  name = document.getElementById("name").value;
-  password = document.getElementById("passwort").value;
-  mail = document.getElementById("mail").value;
-  if (regex.test(password) == false) {
-    alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
-  }
-  else {
-    try {
-      if (mail.match(mailpattern)) {
-        alert(`Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt`);
-      }
-      else {
-        //Exception
-        throw new Error(`Mailadresse nicht gültig`);
-      }
+    name = document.getElementById("name").value;
+    password = document.getElementById("passwort").value;
+    mail = document.getElementById("mail").value;
+    if (regex.test(password) == false) {
+        alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
+    } else {
+        try {
+            if (mail.match(mailpattern)) {
+                alert(`Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt`);
+            } else {
+                //Exception
+                throw new Error(`Mailadresse nicht gültig`);
+            }
+        } catch (error) {
+            alert("Email nicht definiert!")
+        }
     }
-    catch (error) {
-      alert("Email nicht definiert!")
-    }
-  }
 }
 
 

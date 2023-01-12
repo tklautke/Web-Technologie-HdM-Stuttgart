@@ -5,24 +5,25 @@ const regex = /[a-zA-Z0-9]{6,}/;
 const mailpattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
 function seatReservation(aSeat) {
-  //function is not necessary
+    //function is not necessary
 }
 
 class Reservations {
-  constructor(aMailadress) {
-    this.aMailadress = aMailadress;
-  }
-  mySeatList = [];
+    mySeatList = [];
 
-  addSeatReservation(aSeat){
-    this.mySeatList.push(aSeat)
-  }
+    constructor(aMailadress) {
+        this.aMailadress = aMailadress;
+    }
 
-  printReservations(){
-    this.mySeatList.forEach(i => {
-      console.log(i)
-    })
-  }
+    addSeatReservation(aSeat) {
+        this.mySeatList.push(aSeat)
+    }
+
+    printReservations() {
+        this.mySeatList.forEach(i => {
+            console.log(i)
+        })
+    }
 }
 
 // Test
@@ -33,31 +34,29 @@ list.printReservations();
 
 //Aufgabe 2
 function addMe() {
-  name = document.getElementById("name").value;
-  password = document.getElementById("passwort").value;
-  mail = document.getElementById("mail").value;
+    name = document.getElementById("name").value;
+    password = document.getElementById("passwort").value;
+    mail = document.getElementById("mail").value;
 
-  if (regex.test(password) === false) {
-    alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
-  }
-  else {
-    if (mail.match(mailpattern)) {
-      alert(`Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt`);
+    if (regex.test(password) === false) {
+        alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
+    } else {
+        if (mail.match(mailpattern)) {
+            alert(`Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt`);
+        } else {
+            //Exception
+            throw new Error(`Mailadresse nicht gültig`);
+        }
     }
-    else {
-      //Exception
-      throw new Error(`Mailadresse nicht gültig`);
-    }
-  }
 
 
 }
 
 function showMe() {
-  try{
-    addMe();
-  }catch (e) {
-    alert(e)
-  }
+    try {
+        addMe();
+    } catch (e) {
+        alert(e)
+    }
 }
 

@@ -8,13 +8,13 @@
 // -> defer: Werden in der Reihnfolge eingebunden in der sie auf der Seite eingebunden sind 
 // -> Gemeinsamkeiten: Beide binden JS Scripte ein. 
 
-function showMe(){
+function showMe() {
     let name = document.getElementById("name").value
     let password = document.getElementById("password").value
 
-    if (password.length < 6){
+    if (password.length < 6) {
         alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
-    }else {
+    } else {
         alert(`Name: ${name} \nPassword: ${password}`)
     }
 }

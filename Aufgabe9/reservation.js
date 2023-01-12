@@ -9,11 +9,11 @@
  */
 
 const availableSeats =
-  ["a1", "a2", "a3", "a4", "a5",
-    "b1", "b2", "b3", "b4", "b5",
-    "c1", "c2", "c3", "c4", "c5",
-    "d1", "d2", "d3", "d4", "d5",
-    "e1", "e2", "e3", "e4", "e5"];
+    ["a1", "a2", "a3", "a4", "a5",
+        "b1", "b2", "b3", "b4", "b5",
+        "c1", "c2", "c3", "c4", "c5",
+        "d1", "d2", "d3", "d4", "d5",
+        "e1", "e2", "e3", "e4", "e5"];
 
 // Aufgabe 2
 // Anzeige der Sitze
@@ -28,22 +28,22 @@ let row = table.insertRow();
 
 // Sitzplätze in Reihen aufteilen
 for (let seat = 0; seat < availableSeats.length; seat++) {
-  if (seatInRow >= availableColumns) {
-    // Neue Tabellenzeile erzeugen
-    row = table.insertRow();
-    // Zähler zurücksetzen
-    seatInRow = 0;
-  }
-  // Sitzplatz pro Zeile zählen
-  seatInRow++;
+    if (seatInRow >= availableColumns) {
+        // Neue Tabellenzeile erzeugen
+        row = table.insertRow();
+        // Zähler zurücksetzen
+        seatInRow = 0;
+    }
+    // Sitzplatz pro Zeile zählen
+    seatInRow++;
 
-  let cell = row.insertCell();
-  let text = document.createTextNode(availableSeats[seat]);
-  cell.appendChild(text);
-  cell.onclick = function () {
-      setReservation(cell)
-  };
-} 
+    let cell = row.insertCell();
+    let text = document.createTextNode(availableSeats[seat]);
+    cell.appendChild(text);
+    cell.onclick = function () {
+        setReservation(cell)
+    };
+}
 
 // Tabelle zu div mit ID "currentSeats" hinzufügen
 document.getElementById("currentSeats").appendChild(table);
@@ -52,16 +52,16 @@ let reservatedSeats = []
 
 // Speicherung der ausgewählten Sitze:
 function setReservation(value) {
-  if (value.style.backgroundColor != "grey") {
-    // Falls die Zelle noch nicht selektiert wurde
-    value.style.backgroundColor = "grey";
-    let text = value.innerHTML;
-  
-    // Hier ergänzen
-    reservatedSeats.push(text)
-    document.getElementById("seats").innerHTML = reservatedSeats.join(", ")
+    if (value.style.backgroundColor != "grey") {
+        // Falls die Zelle noch nicht selektiert wurde
+        value.style.backgroundColor = "grey";
+        let text = value.innerHTML;
 
-  }
+        // Hier ergänzen
+        reservatedSeats.push(text)
+        document.getElementById("seats").innerHTML = reservatedSeats.join(", ")
+
+    }
 }
 
 // Reservierte Sitze löschen

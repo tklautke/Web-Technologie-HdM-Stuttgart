@@ -3,6 +3,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import kinoplakat from './assets/Kinoplakat.jpeg'
+
 import("./SeatList.css")
 
 export default class SeatList extends Component {
@@ -12,7 +13,7 @@ export default class SeatList extends Component {
     }
 
     render() {
-        return(
+        return (
             <div className={'centered'}>
                 <Card className={'card-styling'}>
                     <CardMedia

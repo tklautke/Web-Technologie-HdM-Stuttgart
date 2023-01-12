@@ -3,7 +3,8 @@ var password;
 var mail;
 const regex = /[a-zA-Z0-9]{6,}/;
 
-const regexMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;;
+const regexMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+;
 
 
 const newsletter = [
@@ -39,15 +40,14 @@ function addMe() {
     mail = document.getElementById("mail").value;
 
     // Aufgabe 2.2
-    if (!isValidMail(mail)){
+    if (!isValidMail(mail)) {
         throw new Error("Given Mail is not valid")
     }
 
 
     if (regex.test(password) == false) {
         alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
-    }
-    else {
+    } else {
         alert("Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt");
     }
 }
@@ -63,7 +63,7 @@ function showMe() {
 
     //Aufgabe 1.2
     newsletter.forEach(element => {
-        if(element.mail.includes("@web.com")){
+        if (element.mail.includes("@web.com")) {
             console.log(`${element.id} ${element.name} ${element.mail} ${element.password}`)
         }
     });
@@ -94,9 +94,9 @@ function showMe() {
 }
 
 function isValidMail(mail) {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){
-    return (true)
-  } else {
-    return (false)
-  }
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return (true)
+    } else {
+        return (false)
+    }
 }
