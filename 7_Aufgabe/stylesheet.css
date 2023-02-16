@@ -87,25 +87,20 @@ button {
     opacity: 0.5;
 }
 
-/* Media Query */
 @media screen and (max-width: 800px) {
-    /* A2 - Die Body-Hintergrundfarbe soll sich zu "bisque" ändern */
     body {
         background-color: bisque;
     }
 
-    /* A2 - Die Inhalte des Navigationselementes sollen flexibel sein und  den gleichen Abstand zueinander haben */
     nav {
         display: flex;
         justify-content: space-between;
     }
 
-    /* A3 - Die Elemente der Klasse "navigator" sollen um den gleichen Wertwachsen,wenn die Bildschirm Größe erhöht wird */
     .navigator {
         flex-grow: 1;
     }
 
-    /* A4 - Fügen Sie den Inputs die Klasse „eingabe“ hinzu. Wenn die Bildschirmgröße unter 800px fällt, soll die Breite der Inputfeldes 50% betragen.*/
     .eingabe {
         width: 50%;
     }

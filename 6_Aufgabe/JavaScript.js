@@ -1,11 +1,9 @@
-var name;
-var password;
-var mail;
+let name;
+let password;
+let mail;
 const regex = /[a-zA-Z0-9]{6,}/;
 
 const regexMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-;
-
 
 const newsletter = [
     {
@@ -45,7 +43,7 @@ function addMe() {
     }
 
 
-    if (regex.test(password) == false) {
+    if (regex.test(password) === false) {
         alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
     } else {
         alert("Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt");
@@ -85,7 +83,7 @@ function showMe() {
     //Aufgabe 2.1
     // a: Exceptions werden ausgelöst, wenn in der Runtime Fehler auftreten. 
     // b: EvalError, RangeError, ReferenceError, SyntaxError, TypeError, URIError, AggregateError und InternalError 
-    // c: * Die try-Anweisung definiert einen auszuführenden Code-Block 
+    // c: * Die try-Anweisung definiert einen auszuführenden Code-Block
     //    * Die catch-Anweisung definiert einen Code-Block zur Behandlung eines Fehlers.
     //    * Die finally-Anweisung definiert einen Codeblock, der unabhängig vom Ergebnis ausgeführt wird.
     //    * Die throw-Anweisung definiert einen benutzerdefinierten Fehler.
@@ -95,8 +93,8 @@ function showMe() {
 
 function isValidMail(mail) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-        return (true)
+        return true
     } else {
-        return (false)
+        return false
     }
 }

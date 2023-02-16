@@ -1,12 +1,12 @@
 body {
     max-width: 1300px;
     margin: auto;
-    font-family: Arial, Helvetica, Sans-Serif;
+    font-family: Arial, Helvetica, Sans-Serif, serif;
     text-align: center;
 }
 
 .webtitel {
-    font-family: Impact, Charcoal, Sans-Serif;
+    font-family: Impact, Charcoal, Sans-Serif, serif;
     background-color: #ffa600;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .headline {
-    font-family: Courier New, Courier, Monospace;
+    font-family: Courier New, Courier, Monospace, serif;
 }
 
 table {

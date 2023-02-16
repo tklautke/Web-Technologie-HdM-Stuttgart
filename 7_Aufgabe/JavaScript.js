@@ -2,11 +2,7 @@ let name;
 let password;
 let mail;
 const regex = /[a-zA-Z0-9]{6,}/;
-const mailpattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
-
-function seatReservation(aSeat) {
-    //function is not necessary
-}
+const mailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
 
 class Reservations {
     mySeatList = [];
@@ -41,7 +37,7 @@ function addMe() {
     if (regex.test(password) === false) {
         alert("Passwort muss mindestens eine Länge von 6 Zeichen enthalten")
     } else {
-        if (mail.match(mailpattern)) {
+        if (mail.match(mailPattern)) {
             alert(`Nutzer \n Name: ${name} \n Passwort: ${password} \n Email: ${mail} \n wurde angelegt`);
         } else {
             //Exception
